@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>9</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DAL\DAL.csproj" />
+      <ProjectReference Include="..\GameBrain\GameBrain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.Certificate" Version="5.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="PlaceBoatsPage\PlaceBoats.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\PlaceBoats\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Pages\PlaceBoatsPage\Index.cshtml.cs">
+        <DependentUpon>Index.cshtml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

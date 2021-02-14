@@ -1,0 +1,39 @@
+﻿@page
+@using Domain.Enums
+@model WebApp.Pages.Settings.Index
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="X">Enter board width</label>
+        <input asp-for="X" class="form-control"/>
+        <span asp-validation-for="X" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Y">Enter board height</label>
+        <input asp-for="Y" class="form-control"/>
+        <span asp-validation-for="Y" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NextMoveAfterHit">Who moves after hit?</label>
+        <select asp-for="NextMoveAfterHit" asp-items="Html.GetEnumSelectList<ENextMoveAfterHit>()" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BoatsCanTouch">Can boats touch?</label>
+        <select asp-for="BoatsCanTouch" asp-items="Html.GetEnumSelectList<EBoatsCanTouch>()" class="form-control"></select>
+    </div>
+
+    @for (var i = 0; i < Model.Boats.Count; i++)
+    {
+        <div class="form-group">
+            <input asp-for="@Model.GameOptionBoats[i].BoatId" hidden="hidden" value="@Model.Boats[i].BoatId"/>
+            <label asp-for="@Model.GameOptionBoats[i].Amount">Enter amount for @Model.Boats[i].Name (size @Model.Boats[i].Size x @Model.Boats[i].Size)</label>
+            <input asp-for="@Model.GameOptionBoats[i].Amount" class="form-control"/>
+            <span asp-validation-for="@Model.GameOptionBoats[i].Amount" class="text-danger"></span>
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Start</button>
+</form>

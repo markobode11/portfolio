@@ -1,0 +1,14 @@
+﻿@page
+@model WebApp.Pages.SwitchPlayers.Index
+
+@if (Model.Message != null)
+{
+  <div class="alert alert-secondary">@Model.Message</div>
+}
+
+<div class="alert alert-primary">Switch players!</div>
+
+<form method="get" asp-page="@Model.PageToGoTo">
+  <input type="hidden" asp-for="GameId" value="@Model.GameId"/> 
+  <button type="submit" class="btn btn-warning">Continue</button>
+</form>

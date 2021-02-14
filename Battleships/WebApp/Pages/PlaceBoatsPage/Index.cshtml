@@ -1,0 +1,55 @@
+﻿@page
+@model WebApp.Pages.PlaceBoatsPage.Index
+
+<div class="alert alert-primary">Place @Model.Boat.Name. Size @Model.Boat.Size x 1</div>
+
+<form method="post" asp-route-P1Turn="@Model.P1Turn" asp-route-BoatsPlaced="@Model.BoatsPlaced">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <input asp-for="GameId" value="@Model.GameId" hidden="hidden"/>
+    <input asp-for="BoatSize" value="@Model.Boat.Size" hidden="hidden"/>
+
+    <div class="row text-center">
+        <div class="col-sm mt-4">
+            <div class="alert alert-info">Give start coordinates</div>
+        </div>
+
+        <div class="col-sm">
+            <div class="form-group">
+                <label class="form-label" asp-for="StartCoordinates">Start coordinates (example A1)</label>
+                <input asp-for="StartCoordinates" class="form-control"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-sm mt-4">
+            <div class="alert alert-info">Give end coordinates</div>
+        </div>
+
+        <div class="col-sm">
+            <div class="form-group">
+                <label class="form-label" asp-for="EndCoordinates">End coordinates (example c1)</label>
+                <input asp-for="EndCoordinates" class="form-control"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-sm">
+            <input type="submit" class="btn-lg btn-primary mb-3" value="Place boat"/>
+        </div>
+        @if (Model.BoatsPlaced == 0)
+        {
+            <div class="col-sm">
+                <button type="submit" class="btn-lg btn-primary mb-3" name="isRandom" value="true">Place all boats randomly</button>
+            </div>
+        }
+
+
+    </div>
+</form>
+
+<div class="alert alert-info"> Your board</div>
+
+<partial model="@Model.StaticBoard" name="Shared/_StaticBoardPartial"/>

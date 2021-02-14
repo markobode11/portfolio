@@ -1,0 +1,42 @@
+@page
+@using Domain.Enums
+@model WebApp.Pages.Games.IndexModel
+
+<h1>Saved games</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Game name</th>
+            <th>Player 1 name</th>
+            <th>Player 2 name</th>
+            <th>Can boats touch</th>
+            <th>Who moves after hit</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Games) {
+        <tr>
+            <td>@item.Description</td>
+            <td>@item.Player1.Name</td>
+            <td>@item.Player2.Name</td>
+            <td>@item.GameOption!.EBoatsCanTouch</td>
+            
+            @if (@item.GameOption.ENextMoveAfterHit == ENextMoveAfterHit.OtherPlayer)
+            {
+                <td>@item.GameOption.ENextMoveAfterHit.ToString().Insert(5, " ")</td>
+            }
+            else
+            {
+                <td>@item.GameOption.ENextMoveAfterHit.ToString().Insert(4, " ")</td>
+            }
+
+            <td>
+                <a asp-page="/BoardPage/Index" asp-route-GameId="@item.GameId">Continue game</a> |
+                <a asp-page="./Delete" asp-route-id="@item.GameId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,16 @@
+Index: ConsoleApp/Program.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ConsoleApp/Program.cs	(date 1606564461538)
++++ ConsoleApp/Program.cs	(date 1606564461538)
+@@ -127,7 +127,7 @@
+                             _brain.GetCoordinates($"{optionBoat.Boat.Name}({optionBoat.Boat.Size}x1) end");
+                         if (_brain.TryToPlaceBoat(start, end, optionBoat.Boat.Size))
+                         {
+-                            _brain.PlaceTheBoat(start, end, optionBoat.Boat);
++                            _brain.PlaceTheBoat(start, end, optionBoat.BoatId);
+                             BattleshipsUi.DrawBoardsNextToEachOther(_brain);
+                             break;
+                         }

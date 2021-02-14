@@ -1,0 +1,417 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\ConsoleApp\\ConsoleApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\ConsoleApp\\ConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\ConsoleApp\\ConsoleApp.csproj",
+        "projectName": "ConsoleApp",
+        "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\ConsoleApp\\ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\Bode\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\ConsoleApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bode\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\DAL.csproj"
+              },
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj"
+              },
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameConsoleUI\\GameConsoleUI.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameConsoleUI\\GameConsoleUI.csproj"
+              },
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\MenuSystem.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\MenuSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Bode\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bode\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Bode\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bode\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj",
+        "projectName": "GameBrain",
+        "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj",
+        "packagesPath": "C:\\Users\\Bode\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bode\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\DAL\\DAL.csproj"
+              },
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameConsoleUI\\GameConsoleUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameConsoleUI\\GameConsoleUI.csproj",
+        "projectName": "GameConsoleUI",
+        "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameConsoleUI\\GameConsoleUI.csproj",
+        "packagesPath": "C:\\Users\\Bode\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameConsoleUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bode\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj"
+              },
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\MenuSystem.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\MenuSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\MenuSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\MenuSystem.csproj",
+        "projectName": "MenuSystem",
+        "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\MenuSystem.csproj",
+        "packagesPath": "C:\\Users\\Bode\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\MenuSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bode\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj": {
+                "projectPath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\GameBrain\\GameBrain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

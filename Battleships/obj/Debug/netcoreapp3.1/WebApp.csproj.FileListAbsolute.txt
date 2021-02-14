@@ -1,0 +1,7 @@
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\obj\Debug\netcoreapp3.1\WebApp.csprojAssemblyReference.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\obj\Debug\netcoreapp3.1\WebApp.AssemblyInfoInputs.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\obj\Debug\netcoreapp3.1\WebApp.AssemblyInfo.cs
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\obj\Debug\netcoreapp3.1\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\obj\Debug\netcoreapp3.1\WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\obj\Debug\netcoreapp3.1\WebApp.RazorAssemblyInfo.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\obj\Debug\netcoreapp3.1\WebApp.RazorAssemblyInfo.cs

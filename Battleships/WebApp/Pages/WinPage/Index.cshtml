@@ -1,0 +1,18 @@
+﻿@page
+@model WebApp.Pages.WinPage.Index
+
+<div class="alert alert-success">@Model.Message</div>
+<div class="row text-center ">
+    <div class="col-sm">
+        <div class="alert alert-info"> Your board</div>
+        <partial name="Shared/_StaticBoardPartial" model="@Model.FirstBoard"/>
+    </div>
+    <div class="col-sm">
+        <div class="alert alert-info"> Opponent's board</div>
+        <partial name="Shared/_StaticBoardPartial" model="@Model.SecondBoard"/>
+    </div>
+</div>
+
+<form method="get" asp-page="/Index">
+    <button type="submit" class="btn btn-primary">Back to home page</button>
+</form>

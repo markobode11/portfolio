@@ -1,0 +1,22 @@
+﻿@page
+@model WebApp.Pages.BoardPage.Index
+
+@if (Model.LastMoveMessage != null)
+{
+    <div class="alert alert-primary">@Model.LastMoveMessage</div>
+}
+<div class="alert alert-warning">@Model.NextMoveMessage</div>
+<div class="row text-center ">
+    <div class="col-sm">
+        <div class="alert alert-info"> Your board</div>
+        <partial name="Shared/_StaticBoardPartial" model="Model.StaticBoard"/>
+    </div>
+    <div class="col-sm">
+        <div class="alert alert-info"> Opponent's board</div>
+        <partial name="Shared/_ClickableBoardPartial" model="Model"/>
+    </div>
+</div>
+
+<form method="post" asp-route-GameId="@Model.GameId">
+    <button type="submit" class="btn btn-warning">Undo last move</button>
+</form>

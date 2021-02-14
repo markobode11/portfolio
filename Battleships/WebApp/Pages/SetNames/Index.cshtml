@@ -1,0 +1,26 @@
+﻿@page
+@model WebApp.Pages.SetNames.Index
+
+<form method="post">
+    <input asp-for="GameId" value="@Model.GameId" hidden="hidden"/>
+
+    <div class="form-group">
+        <label asp-for="Game.Description">Enter name for the game</label>
+        <input asp-for="Game.Description" class="form-control" placeholder="Game name"/>
+        <span asp-validation-for="Game.Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Game.Player1.Name">Enter player 1 name</label>
+        <input asp-for="Game.Player1.Name" class="form-control" placeholder="Player 1 name"/>
+        <span asp-validation-for="Game.Player1.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Game.Player2.Name">Enter player 2 name</label>
+        <input asp-for="Game.Player2.Name" class="form-control" placeholder="Player 2 name"/>
+        <span asp-validation-for="Game.Player2.Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Start</button>
+</form>

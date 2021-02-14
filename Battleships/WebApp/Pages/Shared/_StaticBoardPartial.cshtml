@@ -1,0 +1,25 @@
+﻿@functions{
+    private readonly char[] _alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+}
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th scope="col"></th>
+        @for (var x = 0; x < Model.GetLength(1); x++)
+        {
+            <th scope="col">@_alphabet[x]</th>
+        }
+    </tr>
+    </thead>
+    @for (var y = 0; y < Model.GetLength(0); y++)
+    {
+        <tr>
+            <th scope="row">@(y + 1)</th>
+            @for (var x = 0; x < Model.GetLength(1); x++)
+            {
+                <td>@Model[y, x]</td>
+            }
+        </tr>
+    }
+</table>

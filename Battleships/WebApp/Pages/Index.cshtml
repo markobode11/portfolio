@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container text-center">
+
+    <h1 class="display-4">Battleships</h1>
+
+    <img class="mb-3" src="~/battleships_pic.jpeg" width="600" height="400" alt="demonstrative picture"/>
+
+    <div class="list-group">
+        <div class="row justify-content-md-center">
+            <div class="col-8">
+                <a class="list-group-item list-group-item-action list-group-item-primary" asp-page="/ModeSelect/Index"> Start new game </a>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-8">
+                <a class="list-group-item list-group-item-action list-group-item-primary" asp-page="/Games/Index"> Load game </a>
+            </div>
+        </div>
+    </div>
+</div>

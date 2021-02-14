@@ -1,0 +1,16 @@
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\MenuSystem.deps.json
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\MenuSystem.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\MenuSystem.pdb
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\obj\Debug\netstandard2.1\MenuSystem.csprojAssemblyReference.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\obj\Debug\netstandard2.1\MenuSystem.AssemblyInfoInputs.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\obj\Debug\netstandard2.1\MenuSystem.AssemblyInfo.cs
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\obj\Debug\netstandard2.1\MenuSystem.csproj.CoreCompileInputs.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\obj\Debug\netstandard2.1\MenuSystem.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\obj\Debug\netstandard2.1\MenuSystem.pdb
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\GameBrain.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\GameBrain.pdb
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\obj\Debug\netstandard2.1\MenuSystem.csproj.CopyComplete
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\DAL.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\MenuSystem\bin\Debug\netstandard2.1\DAL.pdb

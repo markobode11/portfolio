@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aKgK5KpV17jF+dbXudMPQ1KfD8oPIwIl5UN4kQnqE8SuylUEgt6fbQpYM4XmTUqEX47OqIKa5jNkAAwn0mKKsQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bode\\icd0008-2020f\\homeworks\\Battleships\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bode\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\bin\Debug\netstandard2.1\DAL.deps.json
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\bin\Debug\netstandard2.1\DAL.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\bin\Debug\netstandard2.1\DAL.pdb
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\obj\Debug\netstandard2.1\DAL.csprojAssemblyReference.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\obj\Debug\netstandard2.1\DAL.AssemblyInfoInputs.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\obj\Debug\netstandard2.1\DAL.AssemblyInfo.cs
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\obj\Debug\netstandard2.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\obj\Debug\netstandard2.1\DAL.csproj.CopyComplete
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\obj\Debug\netstandard2.1\DAL.dll
+C:\Users\Bode\icd0008-2020f\homeworks\Battleships\DAL\obj\Debug\netstandard2.1\DAL.pdb
