@@ -1,0 +1,38 @@
+@page
+@model WebApp.Pages.JobItems.CreateModel
+
+<h1>Create</h1>
+
+<h4>Job Item</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="JobItem.ItemId" class="control-label">Item</label>
+                <select asp-for="JobItem.ItemId" class ="form-control" asp-items="Model.Items"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobItem.JobId" class="control-label">Job</label>
+                <select asp-for="JobItem.JobId" class ="form-control" asp-items="Model.Jobs"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobItem.QuantityNeeded" class="control-label"></label>
+                <input asp-for="JobItem.QuantityNeeded" class="form-control" />
+                <span asp-validation-for="JobItem.QuantityNeeded" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

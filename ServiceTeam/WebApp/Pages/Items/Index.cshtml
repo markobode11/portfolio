@@ -1,0 +1,96 @@
+@page
+@model WebApp.Pages.Items.IndexModel
+
+<h1>Stock items</h1>
+
+<p>
+    <a asp-page="Create">Add new item</a>
+</p>
+
+<form method="get">
+    <label for="searchItems">Search by</label>
+    <div class="row">
+        <div class="col form-group">
+            <select name="searchItems" id="searchItems" class="form-control">
+                <option value="name">Name</option>
+                <option value="category">Category</option>
+            </select>
+        </div>
+        <div class="col">
+            <input placeholder="Type here" class="form-control" asp-for="@Model.Search"/>
+        </div>
+        <div class="col-sm-3">
+            <label asp-for="@Model.Exclusion">Exclusion</label>
+            <input type="checkbox" asp-for="@Model.Exclusion"/>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary form-control">Search</button>
+        </div>
+        @if (Model.Search != null)
+        {
+            <div class="col">
+                <a asp-page="Index">Clear searches</a>
+            </div>
+        }
+    </div>
+</form>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Item[0].Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item[0].Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item[0].CurrentQuantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item[0].OptimalQuantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item[0].Price) (€)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item[0].Category)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Item)
+    {
+        <tr class="@Model.GetClass(item)">
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OptimalQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category!.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ItemId">Edit</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ItemId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

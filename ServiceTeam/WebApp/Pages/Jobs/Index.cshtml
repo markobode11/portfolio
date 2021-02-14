@@ -1,0 +1,56 @@
+@page
+@model WebApp.Pages.Jobs.IndexModel
+
+<h1>Jobs</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Job[0].Description)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Job[0].JobItems)
+        </th>
+        <th>Can perform?</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Job)
+    {
+        var canPerform = Model.CanPerform(item.JobItems);
+        <tr class="@(canPerform ? "alert-success" : "alert-danger")">
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <ul class="list-group text-center">
+                    @if (item.JobItems != null)
+                    {
+                        foreach (var jobItem in item.JobItems)
+                        {
+                            <li class="list-group-item list-group-item-secondary">
+                                @jobItem.Item!.Name, quantity needed: @jobItem.QuantityNeeded
+                            </li>
+                        }
+                    }
+                </ul>
+            </td>
+            <td>@(canPerform ? "Yes" : "No")</td>
+            <td>
+                <a asp-page="/JobItems/Create" asp-route-id="@item.JobId">Add job item</a> |
+                @if (canPerform)
+                {
+                    <a asp-page="./Index" asp-route-id="@item.JobId">Perform job</a><text> |</text>
+                }
+                <a asp-page="./Edit" asp-route-id="@item.JobId">Edit</a> |
+                <a asp-page="./Delete" asp-route-id="@item.JobId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

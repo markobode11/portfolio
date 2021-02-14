@@ -1,0 +1,56 @@
+@page
+@model WebApp.Pages.PerformedJobs.IndexModel
+
+<h1>Performed jobs</h1>
+
+@* <p> *@
+@*     <a asp-page="Create">Create New</a> *@
+@* </p> *@
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PerformedJob[0].Job)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerformedJob[0].PerformDate)
+        </th>
+        <th class="text-center">Materials spent</th>
+        <th>Cost (€)</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.PerformedJob.Reverse())
+    {
+        var cost = 0;
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Job!.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item!.PerformDate)
+            </td>
+            <td>
+                <ul class="list-group text-center">
+                    @if (item.Job!.JobItems != null)
+                    {
+                        foreach (var jobItem in item.Job.JobItems)
+                        {
+                            cost += jobItem.Item!.Price * jobItem.QuantityNeeded;
+                            <li class="list-group-item list-group-item-secondary">
+                                @jobItem.Item!.Name, quantity used: @jobItem.QuantityNeeded
+                            </li>
+                        }
+                    }
+                </ul>
+            </td>
+            <td>@cost</td>
+            @* <td> *@
+            @*     <a asp-page="./Edit" asp-route-id="@item.PerformedJobId">Edit</a> | *@
+            @*     <a asp-page="./Delete" asp-route-id="@item.PerformedJobId">Delete</a> *@
+            @* </td> *@
+        </tr>
+    }
+    </tbody>
+</table>

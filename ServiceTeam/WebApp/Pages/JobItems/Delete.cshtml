@@ -1,0 +1,36 @@
+@page
+@model WebApp.Pages.JobItems.DeleteModel
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>JobItem</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.JobItem.Item)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.JobItem!.Item!.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.JobItem.Job)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.JobItem!.Job!.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.JobItem.QuantityNeeded)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.JobItem.QuantityNeeded)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="JobItem.JobItemId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
