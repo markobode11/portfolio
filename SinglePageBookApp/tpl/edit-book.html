@@ -1,0 +1,7 @@
+<div tpl-foreach="$errors as $error" id="error-block">{{ $error }}</div>
+
+<div id="add-grid">
+    <form method="post" action="index.php?cmd=edit-book">
+        <tpl tpl-include="book-form.html"></tpl>
+    </form>
+</div>

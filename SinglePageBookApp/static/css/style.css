@@ -1,0 +1,104 @@
+nav {
+    margin-top: 3rem;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    font-size: 14px;
+    font-family: "Times New Roman", sans-serif;
+}
+
+a:link, a:visited {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+#menu-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu-grid-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background: powderblue;
+    min-width: 5rem;
+}
+
+#submit-delete {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2rem;
+}
+
+#message-block, #error-block {
+    background: lightblue;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 2rem;
+}
+
+#error-block {
+    background: red;
+}
+
+#list-grid, #list-grid-header {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+}
+
+#list-grid {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #e5f8ff;
+    border: solid 0.4rem #a1f5ff;
+}
+
+#list-grid-header {
+    background: #bff7ff;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.list-grid-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    border-radius: 2rem;
+    background: powderblue;
+    bottom: 2rem;
+    width: inherit;
+    position: absolute;
+}
+
+#add-grid {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+.add-grid-item {
+    margin-left: 1rem;
+}
+
+#save {
+    grid-column: 2 / 3;
+    text-align: right;
+}

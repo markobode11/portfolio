@@ -1,0 +1,26 @@
+<div tpl-if='$message' id="message-block">{{ $message }}</div>
+
+
+<div id="list-grid-header">
+    <div class="list-grid-item">Pealkiri</div>
+    <div class="list-grid-item">Autorid</div>
+    <div class="list-grid-item">Hinne</div>
+</div>
+
+<div id="list-grid">
+    <tpl tpl-foreach="$books as $book">
+
+        <div class="list-grid-item"><a href="index.php?cmd=edit-book&id={{ $book->id }}">{{ $book->title }}</a>
+        </div>
+        <div class="list-grid-item">
+            <tpl tpl-foreach="$book->authors as $author">
+                {{$author->getName()}}
+                <tpl tpl-if="!$last">,</tpl>
+            </tpl>
+        </div>
+        <div class="list-grid-item">{{ $book->grade }}</div>
+
+    </tpl>
+
+
+</div>

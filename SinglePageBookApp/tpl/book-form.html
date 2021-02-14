@@ -1,0 +1,73 @@
+<input type="hidden" name="id" value="{{ $book->id }}"/>
+<div class="add-grid-item"><label for="title">Pealkiri:</label></div>
+<div class="add-grid-item"><input type="text" id="title" name="title" value="{{ $book->title }}"></div>
+
+<div class="add-grid-item"><label for="author-select1">Autor 1: </label></div>
+<div class="add-grid-item"><select id="author-select1" name="author1">
+
+    <tpl tpl-if="sizeof($book->authors) > 0">
+
+        <option selected="selected" value="{{ $book->authors[0]->id }}">{{ $book->authors[0]->getName() }}</option>
+
+    </tpl>
+
+    <tpl tpl-if="sizeof($book->authors) === 0">
+
+        <option selected="selected" value=""></option>
+
+    </tpl>
+
+    <tpl tpl-foreach="$authors as $author">
+        <option value="{{ $author->id }}">{{ $author->getName() }}</option>
+    </tpl>
+</select>
+</div>
+
+<div class="add-grid-item"><label for="author-select2">Autor 2: </label></div>
+<div class="add-grid-item"><select id="author-select2" name="author2">
+
+    <tpl tpl-if="sizeof($book->authors) > 1">
+
+        <option selected="selected" value="{{ $book->authors[1]->id }}">{{ $book->authors[1]->getName() }}</option>
+
+    </tpl>
+
+    <tpl tpl-if="sizeof($book->authors) < 1">
+
+        <option selected="selected" value=""></option>
+
+    </tpl>
+
+    <tpl tpl-foreach="$authors as $author">
+        <option value="{{ $author->id }}">{{ $author->getName() }}</option>
+    </tpl>
+</select>
+</div>
+
+<div class="add-grid-item"><label>Hinne: </label></div>
+<div class="add-grid-item">
+
+    <tpl tpl-foreach="range(1, 5) as $grade">
+        <label for="grade{{ $grade }}">{{ $grade }}</label>
+        <input type="radio"
+               id="grade{{ $grade }}"
+               name="grade"
+               tpl-checked="$grade == $book->grade"
+               value="{{ $grade }}">
+    </tpl>
+
+</div>
+
+<div class="add-grid-item"><label for="check">Loetud: </label></div>
+
+<div class="add-grid-item">
+    <input name="isRead"
+           id="check"
+           tpl-checked="$book->isRead"
+           type="checkbox"/>
+</div>
+
+<div id="submit-delete" class="add-grid-item">
+    <input type="submit" value="Salvesta" name="submitButton">
+    <input tpl-if="$editForm" type="submit" value="Kustuta" name="deleteButton">
+</div>

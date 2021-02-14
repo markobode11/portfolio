@@ -1,0 +1,25 @@
+<input type="hidden" name="id" value="{{ $author->id }}"/>
+<div class="add-grid-item"><label for="first-name">Eesnimi: </label></div>
+<div class="add-grid-item"><input id="first-name" type="text" name="firstName" value="{{ $author->firstName }}"></div>
+
+<div class="add-grid-item"><label for="last-name">Perekonnanimi: </label></div>
+<div class="add-grid-item"><input id="last-name" type="text" name="lastName" value="{{ $author->lastName }}"></div>
+
+<div class="add-grid-item">Hinne:</div>
+<div class="add-grid-item">
+
+    <tpl tpl-foreach="range(1, 5) as $grade">
+        <label for="grade{{ $grade }}">{{ $grade }}</label>
+        <input type="radio"
+               id="grade{{ $grade }}"
+               name="grade"
+               tpl-checked="$grade == $author->grade"
+               value="{{ $grade }}">
+    </tpl>
+
+</div>
+
+<div id="submit-delete" class="add-grid-item">
+    <input type="submit" value="Salvesta" name="submitButton">
+    <input tpl-if="$editForm" type="submit" value="Kustuta" name="deleteButton">
+</div>

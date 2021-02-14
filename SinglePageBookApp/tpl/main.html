@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div id="menu-grid">
+        <div class="menu-grid-item">
+            <a href="index.php?cmd=book-list" id="book-list-link" class="link">Raamatud</a>
+        </div>
+        <div class="menu-grid-item">
+            <a href="index.php?cmd=book-add" id="book-form-link" class="link">Lisa raamat</a>
+        </div>
+        <div class="menu-grid-item">
+            <a href="index.php?cmd=author-list" id="author-list-link" class="link">Autorid</a>
+        </div>
+        <div class="menu-grid-item">
+            <a href="index.php?cmd=author-add" id="author-form-link" class="link">Lisa autor</a>
+        </div>
+    </div>
+</nav>
+
+<tpl tpl-include="{{ $template }}"></tpl>
+
+<footer>
+    <div>icd0007 projekt</div>
+</footer>
+</body>
+</html>

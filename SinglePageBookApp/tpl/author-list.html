@@ -1,0 +1,19 @@
+<div tpl-if='$message' id="message-block">{{ $message }}</div>
+
+<div id="list-grid-header">
+    <div class="list-grid-item">Eesnimi</div>
+    <div class="list-grid-item">Perekonnanimi</div>
+    <div class="list-grid-item">Hinne</div>
+</div>
+
+<div id="list-grid">
+    <tpl tpl-foreach="$authors as $author">
+        <div class="list-grid-item">
+            <a href="index.php?cmd=edit-author&id={{ $author->id }}">{{ $author->firstName }}</a>
+        </div>
+
+        <div class="list-grid-item">{{ $author->lastName }}</div>
+        <div class="list-grid-item">{{ $author->grade }}</div>
+
+    </tpl>
+</div>
